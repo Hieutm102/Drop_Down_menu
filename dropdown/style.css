@@ -1,0 +1,65 @@
+
+/* 1. Reset the default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+/* 3. Navigation bar */
+nav {
+    background-color: #e67c1f;
+}
+/* 4. Main menu: Home, Web Design, Contact, About */
+nav ul {
+    list-style: none;
+}
+nav .menu {
+    display: flex;
+}
+/* 5. Every menu item */
+nav li {
+    position: relative;
+}
+/* 6. Every clickable menu link */
+nav a {
+    display: block;
+    padding: 16px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+/* 7. Hover effect */
+nav a:hover {
+    background-color: #c45e0c;
+}
+/* 8. Hide every dropdown by default */
+nav .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #222;
+    z-index: 1000;
+}
+/* 9. Show a dropdown when its parent item is hovered */
+nav li:hover > .dropdown {
+    display: block;
+}
+/* 10. Make dropdown links full-width */
+nav .dropdown a {
+    padding: 12px 16px;
+}
+/* 11. Position the nested Tutorials menu to the right */
+nav .dropdown .dropdown {
+    top: 0;
+    left: 100%;
+}
